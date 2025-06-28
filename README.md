@@ -1,7 +1,4 @@
-# java-study-plan
-
-
-# 🧭 Study Plan: Java from Zero to Advanced
+## 🧭 Study Plan: Java from Zero to Advanced
 
 🎯 **Goal**  
 Master Java from its fundamentals to professional development, using best practices, OOP, collections, concurrency, frameworks, and application deployment.
