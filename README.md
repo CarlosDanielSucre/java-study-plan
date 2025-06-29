@@ -8,11 +8,11 @@ Master Java from its fundamentals to professional development, using best practi
 ## 🔰 Phase 1: Java Fundamentals (Beginner)
 
 ### Module 1: Introduction to Java and Tools
-- [ ] What is Java? History, versions, ecosystem.
-- [ ] Installing the JDK and setting up the environment.
-- [ ] Using an IDE: IntelliJ IDEA (recommended).
-- [ ] Structure of a Java program (main, packages, classes).
-- [ ] Compilation and execution from terminal and IDE.
+- [x] What is Java? History, versions, ecosystem.
+- [x] Installing the JDK and setting up the environment.
+- [x] Using an IDE: IntelliJ IDEA (recommended).
+- [x] Structure of a Java program (main, packages, classes).
+- [x] Compilation and execution from terminal and IDE.
 
 ### Module 2: Data Types and Operators
 - [ ] Primitive types (`int`, `double`, `char`, `boolean`, etc.).
