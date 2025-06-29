@@ -57,7 +57,7 @@ On Windows:
 1. Add `JAVA_HOME` environment variable.
 2. Add `%JAVA_HOME%\bin` to your system `PATH`.
 
-📖 Guide: [How to Set JAVA_HOME on Windows](https://confluence.atlassian.com/doc/setting-the-java_home-variable-in-windows-8895.html)
+##### Guide: [How to Set JAVA_HOME on Windows](https://confluence.atlassian.com/doc/setting-the-java_home-variable-in-windows-8895.html)
 
 On Linux/macOS:  
 
@@ -66,7 +66,7 @@ export JAVA_HOME=/path/to/jdk
 export PATH=$JAVA_HOME/bin:$PATH
 ```
 
-### 💻 Using an IDE: IntelliJ IDEA (Recommended)
+### Using an IDE: IntelliJ IDEA (Recommended)
 IntelliJ IDEA is a powerful Java IDE from JetBrains.
 
 Why IntelliJ?  
