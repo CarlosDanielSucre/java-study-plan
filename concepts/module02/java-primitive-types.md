@@ -1,4 +1,4 @@
-## Java Primitive Data Types
+### Java Primitive Data Types
 
 Primitive types in Java are fundamental building blocks for storing simple data values. They are essentially the most basic data types available in the language, used for   
 directly holding values like numbers, single characters, or boolean (true/false) states.
@@ -7,7 +7,7 @@ Think of them as the raw materials or basic ingredients in Java programming.
 Java has **8 primitive data types**, which are the most basic data types built into the language.   
 They are **not objects**, and are stored directly in memory for performance.
 
-## What are Primitive Types For? (Their Purpose)
+### What are Primitive Types For? (Their Purpose)
 
 Primitive types exist in Java primarily for efficiency, performance, and simplicity when  
 dealing with basic data.  
