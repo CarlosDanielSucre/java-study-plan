@@ -16,7 +16,7 @@ Master Java from its fundamentals to professional development, using best practi
 
 ### Module 2: Data Types and Operators
 - [X] [Primitive types (`int`, `double`, `char`, `boolean`, etc.).](concepts/module02/java-primitive-types.md)
-- [ ] Variables and constants (`final`).
+- [x] [Variables and constants (`final`).](concepts/module02/final-variable.md)
 - [ ] Implicit and explicit type casting.
 - [ ] Operators: arithmetic, logical, relational, ternary.
 
