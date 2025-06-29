@@ -94,4 +94,4 @@ names = new ArrayList<>();// not allowed
 
 ##### References: [Oracle Java Tutorials: Variables](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/variables.html) - [W3Schools: Java Variables](https://www.w3schools.com/java/java_variables.asp)
 
-##### [Back to the main README](../../README.md)
+##### [Back to main README](../../README.md)
