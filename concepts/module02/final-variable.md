@@ -21,3 +21,6 @@ Variables are declared with `camelCase` names by convention, and must begin with
 
 ### Types of Variables in Java
 
+|  Type            |  Description                                            |
+----------------------------------------
+|  Local Variable  |  	Declared inside a method, only accessible within it |
