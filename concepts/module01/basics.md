@@ -136,5 +136,6 @@ Create project → add Java class
 
 Right-click file → Run Main.main()
 
-📖 Terminal vs IDE Guide: [Java: Command Line Tools](https://docs.oracle.com/javase/8/docs/technotes/tools/)
-[Back to Main README](../../../README.md)
+##### Terminal vs IDE Guide: [Java: Command Line Tools](https://docs.oracle.com/javase/8/docs/technotes/tools/)
+
+##### [Back to Main README](../../../README.md)
