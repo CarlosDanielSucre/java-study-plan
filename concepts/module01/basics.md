@@ -66,7 +66,7 @@ export JAVA_HOME=/path/to/jdk
 export PATH=$JAVA_HOME/bin:$PATH
 ```
 
-### Using an IDE: IntelliJ IDEA (Recommended)
+### Using an IDE: IntelliJ IDEA
 IntelliJ IDEA is a powerful Java IDE from JetBrains.
 
 Why IntelliJ?  
