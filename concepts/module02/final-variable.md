@@ -21,6 +21,23 @@ Variables are declared with `camelCase` names by convention, and must begin with
 
 ### Types of Variables in Java
 
-|  Type            |  Description                                            |
-----------------------------------------
+|  Type            |  Description                                           |
+|------------------|--------------------------------------------------------|
 |  Local Variable  |  	Declared inside a method, only accessible within it |
+|  Instance Variable|  Belongs to the object (non-static fields)            |
+|  Static Variable |    	Belongs to the class (shared by all instances)    |
+
+### Java is Statically Typed
+
+You must declare the type of every variable at compile time. Java does not allow you to reassign a different type later:
+
+```java
+int x = 5;
+x = "Hello"; // Compile error
+```
+
+## Constants in Java: The `final` Keyword
+
+A `constant` is a variable whose value cannot be changed once assigned. In java, we use the keyword `final` for this.
+
+#### `final` Syntax 
