@@ -10,9 +10,9 @@ Master Java from its fundamentals to professional development, using best practi
 ### Module 1: Introduction to Java and Tools
 - [x] [What is Java? History, versions, ecosystem.](concepts/module01/basics.md#What-is-Java)
 - [x] [Installing the JDK and setting up the environment.](concepts/module01/basics.md)
-- [x] [Using an IDE: IntelliJ IDEA (recommended).](concepts/module01/basics.md)
-- [x] [Structure of a Java program (main, packages, classes).](concepts/module01/basics.md)
-- [x] [Compilation and execution from terminal and IDE.](concepts/module01/basics.md)
+- [x] [Using an IDE: IntelliJ IDEA (recommended).](concepts/module01/basics.md#History,-Versions,-and-Ecosystem)
+- [x] [Structure of a Java program (main, packages, classes).](concepts/module01/basics.md#Structure-of-a-Java-program)
+- [x] [Compilation and execution from terminal and IDE.](concepts/module01/basics.md#Compilation-and-execution-from-terminal-and-IDE.)
 
 ### Module 2: Data Types and Operators
 - [ ] Primitive types (`int`, `double`, `char`, `boolean`, etc.).
