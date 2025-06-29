@@ -54,7 +54,7 @@ While primitives are simple, they are often used within objects as attributes. F
 
 
 
-## 🧠 Key Concepts
+### 🧠 Key Concepts
 
 ### 📌 Integers (`byte`, `short`, `int`, `long`)
 
@@ -99,9 +99,8 @@ Holds only `true` or `false`. Often used in conditionals.
 boolean isJavaFun = true;
 ```
 
----
 
-## 🔍 Type Casting
+### 🔍 Type Casting
 
 ### Implicit (Widening)
 Java automatically converts smaller types to larger types.
@@ -119,9 +118,4 @@ double pi = 3.14;
 int truncated = (int) pi; // 3
 ```
 
----
-
-## 📖 References
-
-- [Oracle Java Primitive Types](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)
-- [W3Schools Java Data Types](https://www.w3schools.com/java/java_data_types.asp)
+##### References: [Oracle Java Primitive Types](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html) - [W3Schools Java Data Types](https://www.w3schools.com/java/java_data_types.asp)
