@@ -92,7 +92,8 @@ public class Main {
 ```
  #### Components:
  
-**Class:** In Java, all your code lives inside "classes." A class is like a blueprint or a mold for creating  "things" (called objects).  
+**Class:**   
+In Java, all your code lives inside "classes." A class is like a blueprint or a mold for creating  "things" (called objects).  
 It defines the characteristics (data it holds) and actions (things it can do) of those "things."  
 Even the main method (your start button) must live inside a class.  
 **Think of it this way:**  
@@ -101,17 +102,18 @@ The car blueprint describes:
 Characteristics: Color, number of wheels, brand. (These are your variables or attributes in Java).  
 Actions: Start engine, move forward, brake. (These are your methods or functions in Java).  
 
-**Main Method:** Think of the main method as the "Play" button or the "Start" button for your program.  
+**Main Method:**  
+Think of the main method as the "Play" button or the "Start" button for your program.  
 When you tell the computer "run this Java program," the first thing it looks for is this specific button.  
 Your program always begins executing instructions from inside the main method.
 
-**Packages (Folders for Organizing) **  
+**Packages (Folders for Organizing)**   
 As your programs grow, you'll have many classes. To keep things organized and to avoid having two classes with  the same name, Java uses packages.  
 Think of packages as folders or directories on your computer.  
 They help to organize your classes logically.  
 They also prevent name conflicts. If you create a Dog class and another programmer also creates a Dog class,   but they are in different folders (packages), Java knows how to tell them apart.  
 
-📖 Java Classes: [W3Schools Java Classes](https://www.w3schools.com/java/java_classes.asp)
+#### Java Classes: [W3Schools Java Classes](https://www.w3schools.com/java/java_classes.asp)
 
 ### Compilation and Execution  
 **Using Terminal:**  
@@ -135,3 +137,4 @@ Create project → add Java class
 Right-click file → Run Main.main()
 
 📖 Terminal vs IDE Guide: [Java: Command Line Tools](https://docs.oracle.com/javase/8/docs/technotes/tools/)
+[Back to Main README](../../../README.md)
