@@ -20,7 +20,7 @@ It is platform-independent thanks to the **Java Virtual Machine (JVM)** — “w
 #####  Reference: [Oracle: What is Java?](https://www.oracle.com/java/technologies/javase-downloads.html) -- [Wikipedia – Java (programming language)](https://en.wikipedia.org/wiki/Java_(programming_language))
 
    
-## 📅 History, Versions, and Ecosystem
+## History, Versions, and Ecosystem
 
 Java has evolved through major versions:
 
