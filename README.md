@@ -21,7 +21,7 @@ Master Java from its fundamentals to professional development, using best practi
 - [X] [Operators: arithmetic, logical, relational, ternary.](concepts/module02/operators.md)
 
 ### Module 3: Control Structures
-- [ ] `if`, `else if`, `else`.
+- [x] [`if`, `else if`, `else`.](concepts/module03/if-else.md)
 - [ ] `switch-case`.
 - [ ] Loops: `for`, `while`, `do-while`.
 - [ ] Keywords: `break`, `continue`.
