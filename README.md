@@ -18,7 +18,7 @@ Master Java from its fundamentals to professional development, using best practi
 - [X] [Primitive types (`int`, `double`, `char`, `boolean`, etc.).](concepts/module02/java-primitive-types.md)
 - [x] [Variables and constants (`final`).](concepts/module02/final-variable.md)
 - [X] [Implicit and explicit type casting.](concepts/module02/type-casting.md)
-- [ ] Operators: arithmetic, logical, relational, ternary.
+- [X] [Operators: arithmetic, logical, relational, ternary.](concepts/module02/operators.md)
 
 ### Module 3: Control Structures
 - [ ] `if`, `else if`, `else`.
