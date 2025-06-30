@@ -25,7 +25,7 @@ int num =  10;
 double result = num; // int -> double
 System.out.println(result); // 10.0
 ```
-        - [x] No data is lost. `int` fits inside a `double`.
+        - No data is lost. `int` fits inside a `double`.
 
 ### Order of Widenning:
 
@@ -36,5 +36,6 @@ byte -> short -> int -> long -> float -> double
 
 This happend **manually** when you're converting from a **larger type to a smaller type**, because Java wants to **protect your data**.
 
-You must use **parentheses** to tell Java:  
-        - "Yes, I know there may be data loss. Do it anyway"
+You must use **parentheses** to tell Java:
+
+       - "Yes, I know there may be data loss. Do it anyway".
