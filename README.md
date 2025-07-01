@@ -22,7 +22,7 @@ Master Java from its fundamentals to professional development, using best practi
 
 ### Module 3: Control Structures
 - [x] [`if`, `else if`, `else`.](concepts/module03/if-else.md)
-- [ ] `switch-case`.
+- [X] [`switch-case`.](concepts/module03/switch-case.md)
 - [ ] Loops: `for`, `while`, `do-while`.
 - [ ] Keywords: `break`, `continue`.
 
