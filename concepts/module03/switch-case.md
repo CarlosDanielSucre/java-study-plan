@@ -98,7 +98,14 @@ public class TraditionalSwitchExample {
 }
 ```
 
-2. Enhanced switch Expressions (Java 14+)Introduced as a preview feature in Java 12 and 13, and standardized in Java 14, the enhanced switch aims to address the common pitfalls of the traditional switch (like accidental fall-through) and make it more expressive, especially for returning values.Syntax:// As a statement (no fall-through)
+### 2. Enhanced switch Expressions (Java 14+)
+
+Introduced as a preview feature in Java 12 and 13, and standardized in Java 14, the enhanced switch aims to address the common pitfalls 
+of the traditional switch (like accidental fall-through) and make it more expressive, especially for returning values.
+
+#### Syntax:
+```java
+// As a statement (no fall-through)
 switch (expression) {
     case value1 -> // code block for value1
     case value2, value3 -> // code block for value2 or value3 (multiple labels)
@@ -111,7 +118,23 @@ result = switch (expression) {
     case value2, value3 -> value_to_return_2_or_3;
     default -> default_value_to_return;
 };
-Key Features and Differences:Arrow (->) Operator:Instead of case value: ... break;, you use case value -> expression; or case value -> { ... };.This syntax implicitly provides a break for each case block, eliminating the fall-through behavior by default.No fall-through (by default): This is a significant improvement. Each case label with the -> operator executes only its associated code block and then exits the switch.Multiple case Labels: You can specify multiple case labels separated by commas for the same code block (e.g., case value1, value2 -> ...).switch as an Expression:The enhanced switch can now be used as an expression, meaning it can compute a value that can be assigned to a variable or returned from a method.When used as an expression, every possible path must return a value. This often means a default case is mandatory unless all possible values of the expression are covered by case labels.yield Keyword (for multi-statement case blocks in expressions):If a case block in a switch expression needs to execute multiple statements before returning a value, you can use a block {} and the yield keyword to specify the value to be returned.yield is similar to return but specifically for switch expressions.Example (Enhanced switch - Java 14+):public class EnhancedSwitchExample {
+```
+#### Key Features and Differences:
+- **Arrow (`->`) Operator**:
+      - Instead of `case value: ... break`;, you use case value `-> expression`; or `case value -> { ... }`;.
+      - This syntax implicitly provides a `break` for each `case` block, eliminating the fall-through behavior by `default`.
+- **No `fall-through` (by default)**: This is a significant improvement. Each `case` label with the `->` operator executes only its associated code block and then exits the `switch`.
+- **Multiple `case` Labels**: You can specify multiple `case` labels separated by commas for the same code block (e.g., `case value1, value2 -> ...`).
+- **switch as an Expression**:
+      - The enhanced `switch` can now be used as an expression, meaning it can compute a value that can be assigned to a variable or returned from a method.
+      - When used as an expression, every possible path must return a value. This often means a `default `case is mandatory unless all possible values of the `expression` are covered by `case` labels.
+- **`yield` Keyword (for multi-statement case blocks in expressions)**:
+      - If a `case` block in a switch expression needs to execute multiple statements before returning a value, you can use a block {} and the `yield` keyword to specify the value to be returned.
+      - `yield` is similar to return but specifically for switch expressions.
+
+  #### Example (Enhanced switch - Java 14+):
+```java
+  public class EnhancedSwitchExample {
     public static void main(String[] args) {
         int dayOfWeek = 3;
         String dayName = switch (dayOfWeek) { // switch as an expression
@@ -145,4 +168,33 @@ Key Features and Differences:Arrow (->) Operator:Instead of case value: ... brea
         // Feedback: Very good!
     }
 }
-3. When to Use switch-caseswitch-case is particularly useful when:You have a single variable or expression whose value you want to evaluate.You need to perform different actions based on a fixed set of discrete values (e.g., error codes, menu options, days of the week, enum states).You want to improve the readability of your code compared to a long if-else if ladder, especially with the enhanced switch.You need to return a value based on different conditions (using enhanced switch expressions).4. Best PracticesUse Enhanced switch (Java 14+): If your project uses Java 14 or newer, prefer the enhanced switch syntax (->) to avoid fall-through bugs and for better readability, especially when returning values.Always Include default: Even if you think all possible values are covered, a default case can catch unexpected inputs or future additions to enum types, preventing silent failures. For switch expressions, default is often mandatory.Keep case Blocks Concise: Try to keep the code inside each case block short and focused. If a block becomes too long, consider extracting the logic into a separate method.Use enum Types: For a fixed set of related constants, enum types are excellent candidates for switch expressions, as they provide type safety and make your code more robust.Order case Labels: While not strictly necessary, ordering case labels logically (e.g., numerically, alphabetically, or by frequency of use) can improve readability.Avoid Complex Expressions in case Labels: case labels must be compile-time constants. Avoid logic that needs to be evaluated at runtime.5. Comparison with if-else ifFeatureswitch-caseif-else ifEvaluationSingle expression, matched against discrete values.Multiple boolean expressions, evaluated sequentially.FlexibilityLess flexible; ideal for exact value matching.Highly flexible; can handle complex conditions (>, <, &&, `ReadabilityOften more readable for many discrete conditions.Can become messy and hard to read with many conditions.fall-throughTraditional switch has it; enhanced switch does not (by default).No fall-through behavior.Return ValueEnhanced switch can directly return a value.Requires return statements within each if/else if block.PerformanceCan be slightly more optimized by JVM for many cases (e.g., jump table).Sequential evaluation, might be slower for many conditions.When to choose:switch-case: When you have a single variable and you need to execute different code based on its exact value from a predefined set of options.if-else if: When you need to evaluate complex conditions, ranges of values, or multiple variables.By understanding both the traditional and enhanced switch statements, you can write more efficient, readable, and maintainable Java code.
+```
+#### 3. When to Use `switch-cases`
+`witch-case` is particularly useful when:
+- You have a single variable or expression whose value you want to evaluate.
+- You need to perform different actions based on a fixed set of discrete values (e.g., error codes, menu options, days of the week, enum states).
+- You want to improve the readability of your code compared to a long `if-else if` ladder, especially with the enhanced switch.
+- You need to return a value based on different conditions (using enhanced switch expressions).
+
+#### 4. Best Practices
+
+- Use Enhanced `switch` (Java 14+): If your project uses Java 14 or newer, prefer the enhanced switch syntax (`->`) to avoid `fall-through` bugs and for better readability, especially when returning values.
+- Always Include `default`: Even if you think all possible values are covered, a `default` case can catch unexpected inputs or future additions to `enum` types,
+preventing silent failures. For `switch` expressions, `default` is often mandatory.
+- Keep `case` Blocks Concise: Try to keep the code inside each `case` block short and focused. If a block becomes too long, consider extracting the logic into a separate method.
+- Use `enum` Types: For a fixed set of related constants, `enum` types are excellent candidates for `switch` expressions, as they provide type safety and make your code more robust.
+- Order `case` Labels: While not strictly necessary, ordering case labels logically (e.g., numerically, alphabetically, or by frequency of use) can improve readability.
+- Avoid Complex Expressions in case Labels: case labels must be compile-time constants. Avoid logic that needs to be evaluated at runtime.
+#### 5. Comparison with `if-else if`
+|Features|witch-case|if-else if|
+|--------|----------|----------|
+|Evaluation|Single expression, matched against discrete values.|Multiple boolean expressions, evaluated sequentially.|
+|Flexibility|Less flexible; ideal for exact value matching.|Highly flexible; can handle complex conditions (>, <, &&, `|
+|Readability|Often more readable for many discrete conditions.|Can become messy and hard to read with many conditions.|
+|fall-through|Traditional switch has it; enhanced switch does not (by default).|No fall-through behavior.|
+|Return Value|Enhanced switch can directly return a value.|Requires return statements within each if/else if block.|
+|Performance|Can be slightly more optimized by JVM for many cases (e.g., jump table).|Sequential evaluation, might be slower for many conditions.|
+
+#### When to choose:
+**`switch-case`**: When you have a single variable and you need to execute different code based on its exact value from a predefined set of options.  
+**`if-else if`**: When you need to evaluate complex conditions, ranges of values, or multiple variables.By understanding both the traditional and enhanced switch statements, you can write more efficient, readable, and maintainable Java code.
