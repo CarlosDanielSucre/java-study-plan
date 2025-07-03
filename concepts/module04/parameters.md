@@ -50,12 +50,37 @@ public static void greet(String name) {
   }
   ```
 
-  ##  RETURN VALUES — "Passing Data Out of Methods"
+##  RETURN VALUES — "Passing Data Out of Methods"
 
-  ### Syntax:
+### Syntax:
 
 ```java
  public static int square(int n) {
     return n * n;
-} 
+}
+```
+
+You can:  
+- **Store** the return: `int result = square(5);`
+- **Print** it directly: `System.out.println(square(5));`
+- **Use** it inside another expression: `int total = square(3) + square(4);`
+
+#### Important Notes:
+
+- A method can return **only one value**
+- `return` **exits** the method immediately
   
+```java
+public static String getMessage() {
+    return "Hello!";
+    // code here would never run
+}
+```
+### METHOD OVERLOADING — “Same Name, Different Signatures”
+
+Overloading allows **multiple methods** with the same name but **different parameters**.  
+It increases **readability**, **flexibility**, and **reusability**.
+
+#### What can be different in the overload?
+
+
