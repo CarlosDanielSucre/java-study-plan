@@ -1,24 +1,28 @@
 ## Loops: `for`, `while`, `do-while`.
-Loops are fundamental control flow statements in Java (and most programming languages) that allow you to execute a block of code repeatedly. They are essential for automating repetitive tasks, iterating over collections, and performing operations until a certain condition is met.
+Loops are fundamental control flow statements in Java (and most programming languages) that allow you to execute a block of code repeatedly. They are essential for automating repetitive tasks, iterating over collections, and performing operations until a certain condition is met.  
 
-Java provides three main types of loops: for, while, and do-while. Each has its specific use cases and characteristics.
+Java provides three main types of loops: `for`, `while`, and `do-while`. Each has its specific use cases and characteristics.
 
-1. The for Loop
-The for loop is typically used when you know in advance how many times you want to iterate, or when you need to iterate over a sequence of numbers.
 
-Syntax:
+### 1. The `for` Loop
+The `for` loop is typically used when you know in advance how many times you want to iterate, or when you need to iterate over a sequence of numbers.
+
+#### Syntax:
+```java
 for (initialization; termination; increment/decrement) {
     // code block to execute repeatedly
 }
+```
+#### Explanation of Components:
 
-Explanation of Components:
-initialization: This statement is executed once at the very beginning of the loop. It's typically used to declare and initialize a loop counter variable (e.g., int i = 0;).
+- **initialization**: This statement is executed once at the very beginning of the loop. It's typically used to declare and initialize a loop counter variable (e.g., int i = 0;).
 
-termination: This is a boolean expression that is evaluated before each iteration. If it evaluates to true, the loop continues; if it evaluates to false, the loop terminates.
+- **termination**: This is a boolean expression that is evaluated before each iteration. If it evaluates to true, the loop continues; if it evaluates to false, the loop terminates.
 
-increment/decrement: This statement is executed after each iteration of the loop. It's typically used to update the loop counter variable (e.g., i++, i--, i += 2).
+- **increment/decrement**: This statement is executed after each iteration of the loop. It's typically used to update the loop counter variable (e.g., i++, i--, i += 2).
 
-Flow of Execution:
+#### Flow of Execution:
+
 initialization is executed.
 
 termination condition is evaluated.
