@@ -83,4 +83,58 @@ It increases **readability**, **flexibility**, and **reusability**.
 
 #### What can be different in the overload?
 
+|  Can Change?           |  Example                                           |
+|------------------------|----------------------------------------------------|
+|✅ Number of parameters |	`sum(int a)` vs `sum(int a, int b)`               |
+|✅ Type of parameters   |`print(int)` vs `print(String)`                     |
+|❌ Return type only     |	❌ Not allowed — Java won’t know which one to call|
 
+#### Example:
+
+```java
+public static void greet(){
+    System.out.println("Hello!");
+}
+public static void greet(String name) {
+    System.out.println("Hello, " + name);
+}
+
+public static void greet(String name, int age) {
+    System.out.println("Hello, " + name + "! You are " + age + " years old.");
+}
+```
+
+#### Usage
+
+```java
+greet();                     // Hello!
+greet("Carlos");             // Hello, Carlos
+greet("Carlos", 25);         // Hello, Carlos! You are 25 years old.
+```
+
+#### Why Overloading Matters
+
+You dont't need to memorize 10 method names.
+You just adapt the method signature to **your need**.
+
+#### Cleaner API design:
+
+```java
+log("Simple message");
+log("With level", "WARNING");
+log("Full", "ERROR", new Date());
+```
+
+#### Deep Practice Ideas
+
+Implement a utility class `MathHelper`:
+
+```java
+public class MathHelper {
+    public static int square(int x)
+    public static double square(double x)
+    public static int add(int a, int b)
+    public static double add(double a, double b)
+    public static int multiply(int a, int b)
+}
+```
