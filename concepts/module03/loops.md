@@ -23,23 +23,24 @@ for (initialization; termination; increment/decrement) {
 
 #### Flow of Execution:
 
-initialization is executed.
+- initialization is executed.
 
-termination condition is evaluated.
+- termination condition is evaluated.
 
-If termination is true:
+- If termination is true:
 
-The code block inside the loop is executed.
+- The code block inside the loop is executed.
 
-increment/decrement is executed.
+- increment/decrement is executed.
 
-Go back to step 2.
+- Go back to step 2.
 
-If termination is false:
+- If termination is false:
 
-The loop terminates, and execution continues with the statement after the loop.
+- The loop terminates, and execution continues with the statement after the loop.
 
-Examples:
+#### Examples:
+```java
 Example 1: Counting from 1 to 5
 
 public class ForLoopExample {
@@ -57,9 +58,10 @@ public class ForLoopExample {
         // Current count: 5
     }
 }
+```
 
-Example 2: Iterating over an array (traditional for loop)
-
+#### Example 2: Iterating over an array (traditional for loop)
+```java
 public class ForLoopArrayExample {
     public static void main(String[] args) {
         String[] fruits = {"Apple", "Banana", "Cherry"};
@@ -74,16 +76,19 @@ public class ForLoopArrayExample {
         // Fruit at index 2: Cherry
     }
 }
+```
+### Enhanced for Loop (for-each loop)
 
-Enhanced for Loop (for-each loop)
 Java also provides an enhanced for loop, or "for-each" loop, which simplifies iterating over arrays and collections. It's more readable and less prone to off-by-one errors.
 
-Syntax:
+#### Syntax:
+```java
 for (Type element : collectionOrArray) {
     // code block to execute for each element
 }
-
-Example (Enhanced for loop):
+```
+#### Example (Enhanced for loop):
+```java
 public class ForEachLoopExample {
     public static void main(String[] args) {
         String[] fruits = {"Apple", "Banana", "Cherry"};
@@ -98,36 +103,39 @@ public class ForEachLoopExample {
         // Fruit: Cherry
     }
 }
-
-2. The while Loop
+```
+### 2. The while Loop
 The while loop is used when you want to repeat a block of code as long as a certain condition remains true. The condition is checked before each iteration.
 
-Syntax:
+#### Syntax:
+```java
 while (condition) {
     // code block to execute repeatedly
 }
+```
+#### Explanation:
 
-Explanation:
-condition: A boolean expression that is evaluated before each execution of the loop body. If condition is true, the loop body executes. If condition is false, the loop terminates.
+- condition: A boolean expression that is evaluated before each execution of the loop body. If condition is true, the loop body executes. If condition is false, the loop terminates.
 
 It's crucial to ensure that the condition eventually becomes false inside the loop body; otherwise, you'll create an infinite loop.
 
 Flow of Execution:
-condition is evaluated.
+- condition is evaluated.
 
-If condition is true:
+- If condition is true:
 
-The code block inside the loop is executed.
+- The code block inside the loop is executed.
 
-Go back to step 1.
+- Go back to step 1.
 
-If condition is false:
+- If condition is false:
 
-The loop terminates.
+- The loop terminates.
 
-Examples:
-Example 1: Counting down from 5
+### Examples:
 
+#### Example 1: Counting down from 5
+```java
 public class WhileLoopExample {
     public static void main(String[] args) {
         int count = 5;
@@ -145,9 +153,9 @@ public class WhileLoopExample {
         // Current count: 1
     }
 }
-
-Example 2: Reading user input until a specific value is entered
-
+```
+#### Example 2: Reading user input until a specific value is entered
+```java
 import java.util.Scanner;
 
 public class WhileLoopInputExample {
@@ -164,42 +172,43 @@ public class WhileLoopInputExample {
         scanner.close();
     }
 }
+```
+### 3. The do-while Loop
 
-3. The do-while Loop
 The do-while loop is similar to the while loop, but with one key difference: the code block is executed at least once before the condition is evaluated. The condition is checked after each iteration.
 
-Syntax:
+#### Syntax:
+```java
 do {
     // code block to execute repeatedly
 } while (condition); // Note the semicolon here!
+```
 
-Explanation:
+#### Explanation:
+
 The do block is executed first.
-
 After the do block executes, the condition is evaluated.
-
 If condition is true, the loop repeats (executes the do block again).
-
 If condition is false, the loop terminates.
-
 Like while loops, it's crucial to ensure the condition eventually becomes false to avoid an infinite loop.
 
-Flow of Execution:
-The code block inside the do section is executed.
+#### Flow of Execution:
+- The code block inside the do section is executed.
 
-condition is evaluated.
+- condition is evaluated.
 
-If condition is true:
+- If condition is true:
 
-Go back to step 1.
+- Go back to step 1.
 
-If condition is false:
+- If condition is false:
 
-The loop terminates.
+- The loop terminates.
 
-Examples:
-Example 1: Counting up to 3 (guaranteed at least one execution)
+### Examples:
+#### Example 1: Counting up to 3 (guaranteed at least one execution)
 
+```java
 public class DoWhileLoopExample {
     public static void main(String[] args) {
         int count = 0;
@@ -215,9 +224,10 @@ public class DoWhileLoopExample {
         // Current count: 2
     }
 }
+```
+#### Example 2: Validating user input (ensuring input is received at least once)
 
-Example 2: Validating user input (ensuring input is received at least once)
-
+```java
 import java.util.Scanner;
 
 public class DoWhileLoopValidationExample {
@@ -241,14 +251,16 @@ public class DoWhileLoopValidationExample {
         scanner.close();
     }
 }
+```
 
-4. Loop Control Statements: break and continue
+### 4. Loop Control Statements: break and continue
+
 These statements allow you to alter the normal flow of a loop.
 
-break: Immediately terminates the innermost loop (or switch statement) and transfers control to the statement immediately following the loop.
+- `break`: Immediately terminates the innermost loop (or switch statement) and transfers control to the statement immediately following the loop.
 
-Example:
-
+#### Example:
+```java
 for (int i = 0; i < 10; i++) {
     if (i == 5) {
         break; // Exit the loop when i is 5
@@ -256,11 +268,11 @@ for (int i = 0; i < 10; i++) {
     System.out.println("i: " + i);
 }
 // Output: 0, 1, 2, 3, 4
+```
+- `continue`: Skips the rest of the current iteration of the innermost loop and proceeds to the next iteration.
 
-continue: Skips the rest of the current iteration of the innermost loop and proceeds to the next iteration.
-
-Example:
-
+#### Example:
+```java
 for (int i = 0; i < 5; i++) {
     if (i == 2) {
         continue; // Skip the rest of this iteration when i is 2
@@ -268,9 +280,10 @@ for (int i = 0; i < 5; i++) {
     System.out.println("i: " + i);
 }
 // Output: 0, 1, 3, 4
+```
+### 5. Choosing the Right Loop
 
-5. Choosing the Right Loop
-for loop:
+#### `for loop`:
 
 Use when you know the exact number of iterations beforehand.
 
@@ -282,13 +295,13 @@ Use when you need to iterate over all elements of an array or collection and don
 
 More concise and readable for simple iteration.
 
-while loop:
+#### `while loop`:
 
 Use when the number of iterations is unknown and depends on a condition that changes during the loop's execution.
 
 The loop might not execute at all if the condition is initially false.
 
-do-while loop:
+#### `do-while loop`:
 
 Use when you need to guarantee that the loop body executes at least once, regardless of the initial condition.
 
