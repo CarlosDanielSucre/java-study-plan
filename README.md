@@ -27,8 +27,8 @@ Master Java from its fundamentals to professional development, using best practi
 - [x] [Keywords: `break`, `continue`.](concepts/module03/break-cointinue.md)
 
 ### Module 4: Methods and Modularity
-- [ ] Method declaration and usage.
-- [ ] Parameters, return values, and overloading.
+- [x] Method declaration and usage.
+- [x] Parameters, return values, and overloading.
 - [ ] Basic recursion.
 
 ---
