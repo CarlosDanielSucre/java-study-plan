@@ -20,3 +20,15 @@ public class Person {
 ```
 
 It's **not an object itself**, just the design of one.
+
+
+### 2. Object
+
+An object is an **instance of a class** -- real, living data created based on the definition.
+
+```java
+Person carlos =  new Person("Carlos", 25);
+```
+
+You can create **multipe objects** from the same class.
+
