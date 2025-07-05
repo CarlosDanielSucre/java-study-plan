@@ -36,8 +36,8 @@ Master Java from its fundamentals to professional development, using best practi
 ## 🧱 Phase 2: Object-Oriented Programming (OOP)
 
 ### Module 5: Classes and Objects
-- [ ] Classes, attributes, and methods.
-- [ ] Constructors and overloading.
+- [x] [Classes, attributes, and methods.](/concepts/module05/classes.md)
+- [x] [Constructors and overloading.](/concepts/module05/classes.md)
 - [ ] `this`, `static`.
 
 ### Module 6: Encapsulation and Relationships
