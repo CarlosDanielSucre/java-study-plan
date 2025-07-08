@@ -38,7 +38,7 @@ Master Java from its fundamentals to professional development, using best practi
 ### Module 5: Classes and Objects
 - [x] [Classes, attributes, and methods.](/concepts/module05/classes.md)
 - [x] [Constructors and overloading.](/concepts/module05/classes.md)
-- [ ] `this`, `static`.
+- [x] [`this`, `static`.](/concepts/module05/this-static.md)
 
 ### Module 6: Encapsulation and Relationships
 - [ ] Getters and setters.
