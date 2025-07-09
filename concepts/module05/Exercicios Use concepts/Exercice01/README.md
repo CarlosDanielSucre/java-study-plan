@@ -7,7 +7,7 @@
 - Create a `Client` class with `name` and `cpf`, and associate it with a `BankAccount` (composition relationship).
 
 
-##✅ Exercise 2: Game Character with Weapon (Composition + Enum Logic)
+## ✅ Exercise 2: Game Character with Weapon (Composition + Enum Logic)
 ### 🎯 Goal:
 
 Model a basic game character system using composition and an enum with embedded logic, representing weapon types.  
