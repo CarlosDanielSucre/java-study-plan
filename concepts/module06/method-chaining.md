@@ -93,6 +93,6 @@ String result = new StringBuilder()
     .append("Carlos")
     .toString();
 ```
-[Go to Challenge](../challenges/method-chaining.md)
+[Go to Challenge](challenges/method-chaining.md)
 
 [Go to Main README](../../README.md)
