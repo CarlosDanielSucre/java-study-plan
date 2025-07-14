@@ -42,8 +42,8 @@ Master Java from its fundamentals to professional development, using best practi
 
 ### Module 6: Encapsulation and Relationships
 - [ ] Getters and setters.
-- [ ] Composition (Has-a relationship).
-- [ ] Enumerations (`enum`).
+- [x] [Composition (Has-a relationship).](/concepts/module06/composition.md)
+- [x] [Enumerations (`enum`).](/concepts/module06/enumeration.md)
 
 ### Module 7: Inheritance and Polymorphism
 - [ ] `extends`, `super`.
