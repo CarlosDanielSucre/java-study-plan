@@ -44,6 +44,7 @@ Master Java from its fundamentals to professional development, using best practi
 - [ ] Getters and setters.
 - [x] [Composition (Has-a relationship).](/concepts/module06/composition.md)
 - [x] [Enumerations (`enum`).](/concepts/module06/enumeration.md)
+- [ ] [Method Chaining](/concepts/module06/method-chaining.md)
 
 ### Module 7: Inheritance and Polymorphism
 - [ ] `extends`, `super`.
