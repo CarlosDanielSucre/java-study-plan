@@ -1,6 +1,7 @@
 ## Java List
+
 - [Java List Tutorial Video](#Java-List-Tutorial-Video)
-List vs. Set
+- [List vs. Set](#List-vs.-Set)
 List Implementations
 Create a List
 Generic Lists
