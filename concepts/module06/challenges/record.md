@@ -46,3 +46,6 @@ Create a simple system that uses record to model books, authors, and a library c
 ✍️ Books by Robert C. Martin:
 - The Clean Coder (2011)
 ```
+### 🧠 Bonus (Optional):
+- Sort the books alphabetically by title.
+- Count how many books each author has written.
