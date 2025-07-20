@@ -2,34 +2,34 @@
 
 - [Java List Tutorial Video](#Java-List-Tutorial-Video)
 - [List vs. Set](#List-vs-Set)
-List Implementations
-Create a List
-Generic Lists
-Insert Elements in a Java List
-Insert null Values
-Insert Elements at Specific Index
-Insert All Elements From One List Into Another
-Get Elements From a Java List
-Find Elements in a List
-Find Last Occurrence of Element in a List
-Checking if List Contains Element
-Remove Elements From a Java List
-Remove All Elements From a Java List
-Retain All Elements From One List in Another
-List Size
-Sublist of List
-Convert List to Set
-Convert List to Array
-Convert Array to List
-Sort List
-Sort List of Comparable Objects
-Sort List Using Comparator
-Iterate List
-Iterate List Using Iterator
-Iterate List Using For-Each Loop
-Iterate List Using For Loop
-Iterate List Using Java Stream API
-More Details in the Java List JavaDoc
+- [List Implementations](#List-Implementations)
+- [Create a List](#Create-a-List)
+- [Generic Lists](#Generic-Lists)
+- [Insert Elements in a Java List](#Insert-Elements-in-a-Java-List)
+  - [Insert null Values](#Insert-null-Values)
+  - [Insert Elements at Specific Index](#Insert-Elements-at-Specific-Index)
+- [Insert All Elements From One List Into Another](#Insert-All-Elements-From-One-List-Into-Another)
+- [Get Elements From a Java List](#Get-Elements-From-a-Java-List)
+- [Find Elements in a List](#Find-Elements-in-a-List)
+  - [Find Last Occurrence of Element in a List](#Find-Last-Occurrence-of-Element-in-a-List)
+- [Checking if List Contains Element](#Checking-if-List-Contains-Element)
+- [Remove Elements From a Java List](#Remove-Elements-From-a-Java-List)
+- [Remove All Elements From a Java List](#Remove-All-Elements-From-a-Java-List)
+- [Retain All Elements From One List in Another](#Retain-All-Elements-From-One-List-in-Another)
+- [List Size](#List-Size)
+- [Sublist of List](#Sublist-of-List)
+- [Convert List to Set](#Convert-List-to-Set)
+- [Convert List to Array](#Convert-List-to-Array)
+- [Convert Array to List](#Convert-to-List)
+- [Sort List](#Sort-List)
+  - [Sort List of Comparable Objects](#Sort-List-of-Comparable-Objects)
+  - [Sort List Using Comparator](#Sort-List-Using-Comparator)
+- [Iterate List](#Iterate-List)
+  - [Iterate List Using Iterator](#Iterate-List-Using-Iterator)
+  - [Iterate List Using For-Each Loop](#Iterate-List-Using-For-Each-Loop)
+  - [Iterate List Using For Loop](#Iterate-List-Using-For-Loop)
+  - [Iterate List Using Java Stream API](#Iterate-List-Using-Java-Stream-API)
+- [More Details in the Java List JavaDoc](#More-Details-in-the-Java-List-JavaDoc)
 
 The Java List interface, java.util.List, represents an ordered sequence of objects. The elements 
 contained in a Java List can be inserted, accessed, iterated and removed according to the order 
