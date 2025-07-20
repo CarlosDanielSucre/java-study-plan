@@ -62,7 +62,7 @@ Master Java from its fundamentals to professional development, using best practi
 ## 🗃️ Phase 3: Intermediate Java
 
 ### Module 9: Collections (Java Collections Framework)
-- [ ] Lists: `ArrayList`, `LinkedList`.
+- [ ] [Lists: `ArrayList`, `LinkedList`.](/concepts/module09/lists.md)
 - [ ] Sets: `HashSet`, `TreeSet`.
 - [ ] Maps: `HashMap`, `TreeMap`.
 - [ ] Iterators and `for-each` loop.
