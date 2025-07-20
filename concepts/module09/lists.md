@@ -111,3 +111,95 @@ good reasons to do so.
 Throughout the rest of this Java List tutorial I will be using generic List examples as much as possible.
 
 For more information about Java Generics, see the Java Generics Tutorial.
+
+## Insert Elements in a Java List
+You insert elements (objects) into a Java List using its add() method. Here is an example of adding elements to a Java List using the add() method:
+
+List<String> listA = new ArrayList<>();
+```
+listA.add("element 1");
+listA.add("element 2");
+listA.add("element 3");
+```
+The first three add() calls add a String instance to the end of the list.
+
+### Insert null Values
+It is actually possible to insert null values into a Java List. Here is an example of inserting a null value into a Java List:
+```
+Object element = null;
+
+List<Object> list = new ArrayList<>();
+
+list.add(element);
+```
+
+### Insert Elements at Specific Index
+
+It is possible to insert an element into a Java List at a specific index. The List interface has a version of the add() method that takes an index as first parameter, and the element to insert as the second parameter. Here is an example of inserting an element at index 0 into a Java List:
+```
+list.add(0, "element 4");
+```
+If the List already contained elements, these elements will now get pushed further down in the List's internal sequence. The element that had index 0 before the new element was inserted at index 0, will get pushed to index 1 etc.
+
+## Insert All Elements From One List Into Another
+
+It is possible to add all elements from one Java List into another List. You do so using the List addAll() method. The resulting List is the union of the two lists. Here is an example of adding all elements from one List into another:
+```
+List<String> listSource = new ArrayList<>();
+
+listSource.add("123");
+listSource.add("456");
+
+List<String> listDest   = new ArrayList<>();
+
+listDest.addAll(listSource);
+```
+This example adds all elements from `listSource` into `listDest`.
+
+The `addAll()` method takes a `Collection` as parameter, so you can pass either a `List` or Java Set as parameter. In other words, you can add all elements from a `List` or `Set` into a `List` with `addAll()` .
+
+## Get Elements From a Java List
+You can get the elements from a Java List using the index of the elements. You can do so using either the get(int index) method. Here is an example of accessing the elements of a Java List using the element indexes:
+
+```
+List<String> listA = new ArrayList<>();
+
+listA.add("element 0");
+listA.add("element 1");
+listA.add("element 2");
+
+//access via index
+String element0 = listA.get(0);
+String element1 = listA.get(1);
+String element3 = listA.get(2);
+```
+It is also possible to iterate the elements of a Java List in the order they are stored in internally. I will show you how to do that later in this Java List tutorial.
+
+## Find Elements in a List
+You can find elements in a Java List using one of these two methods:
+
+- indexOf()
+- lastIndexOf()
+  
+The indexOf() method finds the index of the first occurrence in the List of the given element. Here is an example finding the index of two elements in a Java List:
+```
+List<String> list = new ArrayList<>();
+
+String element1 = "element 1";
+String element2 = "element 2";
+
+list.add(element1);
+list.add(element2);
+
+int index1 = list.indexOf(element1);
+int index2 = list.indexOf(element2);
+
+System.out.println("index1 = " + index1);
+System.out.println("index2 = " + index2);
+```
+Running this code will result in this output:
+```
+index1 = 0
+index2 = 1
+```
+
